@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./medias/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Tropa do calvo 1:calvo combat</title>
+</head>
+<body>
+    <header>
+        <h1>CALVO COMBAT</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="./html/Loja.html">Loja</a>
+            <a href="./html/Sobre.html">Sobre</a>    
+        </nav>
+    </header>
+    <main>
+        <h2>ESCOLHA SEU PERSONAGEM</h2>
+        <form action="./game.html" method="get">
+            <h3>PLAYER 1</h3>
+            <input type="radio" name="player1" id="" value="calvotop" checked><img src="./medias/images/personagens/calvotop/icone/icone.png" alt="calvotopplayer1" onclick="check('calvotop', 'calvotopp1', 0)">
+            
+            <h3>PLAYER 2</h3>
+            <input type="radio" name="player2" id="" value="calvotop" checked><img id="calvotopp2" src="./medias/images/personagens/calvotop/icone/icone.png" alt="calvotopplayer2" onclick="check('calvotop', 'calvotopp2', 1)">
+            <br>
+            <button type="submit">INICIAR</button>
+        </form>
+    </main>
+    <script src="./javascript/check.js"></script>
+</body>
+</html>

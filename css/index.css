@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: pointles;
+    src: url('../medias/fonts/Pointless.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-image: linear-gradient(to bottom, orange, red);
+    padding-bottom: 65%;
+}
+header{
+    text-align: center;
+}
+a{
+    display: inline-block;
+    width: 2%;
+    height: 2%;
+    padding: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+
+}
+main{
+    text-align: center;
+}
+canvas#screen{
+    border: 3px solid;;
+    width: 85%;
+    height: 35%;
+    background-color: rgb(255, 85, 0);
+    background-size: contain;
+}
+h1{
+    text-align: center;
+    font-family: 'pointles', 'Courier New', Courier, monospace;
+    font-size: 4.4em;
+    text-shadow: 4px 4px 2px white;
+}
+h2{
+    text-align: center;
+    font-family: 'pointles', 'Courier New', Courier, monospace;
+    font-size: 3.5em;
+    color: red;
+    text-shadow: 4px 4px 2px rgb(120, 0, 0);
+}
+button{
+    text-align: center;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    font-size: 4em;
+    width: 50%;
+    height: 25%;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+@media  screen and (max-width:750px) {
+    a{
+        font-size: 0.8em;
+    }
+}
