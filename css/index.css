@@ -62,8 +62,39 @@ input[type="radio"]{
     height: 20px;
 }
 
+table{
+    margin: auto;
+}
+td{
+    background-color: white;
+}
+tr:nth-child(even) > td{
+    background-color: rgb(170, 170, 170);
+}
+tr#head{
+    background-color: red;
+}
+td:hover{
+    background-color: gray;
+    color: white;
+}
+tr:nth-child(even) > td:hover{
+    background-color: gray;
+    color: white;
+}
+td.name:hover, tr:nth-child(even) > td.name:hover{
+    background-color: blue;
+}
+p{
+    font-size: 2em;
+}
 @media  screen and (max-width:750px) {
     a{
         font-size: 0.8em;
+    }
+}
+@media  screen and (max-width:1000px) {
+    p{
+        text-align: justify;
     }
 }

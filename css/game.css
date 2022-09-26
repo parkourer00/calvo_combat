@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    position: relative;
+}
+#healtbarr{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 92.3%;
+}
+#player1_life{
+    margin-left: 8.15%;
+}
+#player1_damage, #player2_damage{
+    background-color: rgb(95, 0, 0);
+    height: 30px;
+}
+#player1_life, #player2_life{
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+}
+#timer{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+

@@ -1,0 +1,5 @@
+[ ]Timer ----------\
+[ ]Colisão          |
+[ ]Dano             |
+[ ]Finalizar      <-/
+[ ]sprites

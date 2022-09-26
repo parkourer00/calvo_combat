@@ -1,6 +1,8 @@
 const maps = [
     "../medias/images/fundo/fundo-barbearia.jpg",
-    "../medias/images/fundo/fundo-goku.png"
+    "../medias/images/fundo/KABELELEILALEILOA.png",
+    "../medias/images/fundo/calvo10.jpg",
+    "../medias/images/fundo/rinha_de_calvo.png"
 ]
 var calvosList = []
 function game(){
@@ -8,36 +10,26 @@ function game(){
     for(let calvo of calvosList){
         calvo.update()
     }
+
     requestAnimationFrame(game)
 }
 function play(){
-    canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * 2)]}'`
-    var calvo01 = new Calvo(
-        {
-            speed:{x:1,y:1},
-            size:{width:25, height:75}
-        },
-        {
+    canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}'`
+    var calvo01 = new CalvoTop({
+        position:{
             x:0,
             y:0
         },
-        true
-    )
-    var calvo02 = new Calvo(
-        {
-            speed:{x:1,y:1},
-            size:{width:25, height:75}
-        },
-        {
-            x:100,
+        team:true
+    })
+    var calvo02 = new CalvoTop({
+        position:{
+            x:200,
             y:0
         },
-        false
-    )
+        team:false
+    })
     calvosList = [calvo01, calvo02]
-    for(let calvo of calvosList){
-        keys.observers.push(calvo.moveListener)
-    }
     game()
 }
 play()

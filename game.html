@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./medias/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/game.css">
     <title>TROPA DO CALVO</title>
 </head>
 <body>
@@ -16,19 +18,45 @@
             <a href="./html/Sobre.html">Sobre</a>    
         </nav>
     </header>
-    <canvas id="screen">
-        <h1>
-            Seu celular/pc e uma m3rd4 e não suporta o canvas
-            a não ser se for o laptop da xuxa
-            esse dai roda tudo
-        </h1>
-    </canvas>
+    <main>
+        <div id="healtbarr">
+            <div id="player1_life">
+
+            </div>
+            <div id="player1_damage">
+
+            </div>
+            <div id="timer">
+                <span style="margin-top:40px;position:absolute;">0</span>
+            </div>
+            <div id="player2_life">
+
+            </div>
+            <div id="player2_damage">
+
+            </div>
+        </div>
+    
+        <canvas id="screen">
+            <h1>
+                Seu celular/pc e uma m3rd4 e não suporta o canvas
+                a não ser se for o laptop da xuxa
+                esse dai roda tudo
+            </h1>
+        </canvas>
+    </main>
     <script>
         const canvas = window.document.getElementById("screen")
         const ctx = canvas.getContext("2d")
     </script>
+    <div class="players">
+        <script src="./javascript/calvo.js"></script>
+        <script src="./javascript/personagems/calvotop.js"></script>
+    </div>
     <script src="./javascript/keys.js"></script>
-    <script src="./javascript/calvo.js"></script>
     <script src="./javascript/play.js"></script>
+    <script src="./javascript/extra.js">
+        timer(60)
+    </script>
 </body>
 </html>
