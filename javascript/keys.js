@@ -1,15 +1,4 @@
-/*const keys = {
-    observers:[function(key){console.error(key)}],
-    notifyAll:function(key){
-        for(let observer of keys.observers){
-            observer(key)
-        }
-    },
-    keyFunction:function(event){
-        console.log(event.key)
-        keys.notifyAll(event.key)
-    }
-}*/
+
 const keysDown = {
     "w":() => {
         calvosList[0].movements.up = true
