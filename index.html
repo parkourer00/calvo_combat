@@ -19,15 +19,18 @@
     </header>
     <main>
         <h2>ESCOLHA SEU PERSONAGEM</h2>
-        <form action="./game.html" method="get">
-            <h3>PLAYER 1</h3>
-            <input type="radio" name="player1" id="" value="calvotop" checked><img src="./medias/images/personagens/calvotop/icone/icone.png" alt="calvotopplayer1" onclick="check('calvotop', 'calvotopp1', 0)">
-            
-            <h3>PLAYER 2</h3>
-            <input type="radio" name="player2" id="" value="calvotop" checked><img id="calvotopp2" src="./medias/images/personagens/calvotop/icone/icone.png" alt="calvotopplayer2" onclick="check('calvotop', 'calvotopp2', 1)">
+        <h3>PLAYER 1</h3>
+        <div id="player1">
+            <img id="calvotopp1" src="./medias/images/personagens/calvotop/icone.png" alt="calvotopplayer1" onclick="check('calvotop', 0, 'calvotopp1')">
+        </div>
+        
+        
+        <h3>PLAYER 2</h3>
+        <div id="player2">
+            <img id="calvotopp2" src="./medias/images/personagens/calvotop/icone.png" alt="calvotopplayer2" onclick="check('calvotop', 1, 'calvotopp2')">
+        </div>
             <br>
-            <button type="submit">INICIAR</button>
-        </form>
+        <button onclick="send()">INICIAR</button>
     </main>
     <script src="./javascript/check.js"></script>
 </body>

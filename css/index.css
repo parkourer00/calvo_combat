@@ -88,6 +88,10 @@ td.name:hover, tr:nth-child(even) > td.name:hover{
 p{
     font-size: 2em;
 }
+img{
+    border: 10px solid;
+    border-color: black;
+}
 @media  screen and (max-width:750px) {
     a{
         font-size: 0.8em;

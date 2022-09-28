@@ -3,11 +3,13 @@ class Calvo {
     constructor({position, size, team, velocity, speed, rotate, life}){
         this.velocity = velocity
         this.life = life
+        this.finish = false
         this.speed = speed
         this.team =  team
         this.size = size
         this.position = position
         this.offset = 1
+        this.isAlive = true
         this.movements = {
             up:false,
             down:false,
@@ -51,8 +53,17 @@ class Calvo {
             window.document.getElementById(`player1_life`).style.width = `${calvosList[0].life}%`
             window.document.getElementById(`player1_damage`).style.width = `${100 - calvosList[0].life}%`
         }
+        if(this.life <= 0){
+            this.isAlive = false
+        }
     }
     movement(){
+        if(this.finish){
+            return
+        }
+        if(this.isAlive == false){
+            return
+        }
         if(this.movements.up && !this.fly){
             this.fly = true
             this.velocity.y = this.speed.y * -1
@@ -86,5 +97,20 @@ class Calvo {
             this.fly = false
         }
         else this.velocity.y += gravity
+    }
+    colison(atack, enemy, damage){
+        if(this.isAlive == false){
+            return
+        }
+        if (
+            atack.position.x < enemy.position.x + enemy.size.width &&
+            atack.position.x + atack.size.width > enemy.position.x &&
+            atack.position.y < enemy.position.y + enemy.size.height &&
+            atack.position.y + atack.size.height > enemy.position.y
+        ) {
+            enemy.life -= damage
+            enemy.atualizeLife()
+            console.info("TUEGARAY")
+        }
     }
 }

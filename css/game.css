@@ -28,4 +28,27 @@ main{
     height: 100px;
     flex-shrink: 0;
 }
-
+#buttonsplayer1{
+    width: 50%;
+    float: left;
+}
+#buttonsplayer2{
+    width: 50%;
+    float: right;
+}
+.keys button{
+    margin: 1px;
+    width: 15%;
+    height: 15%;
+    background-color: gray;
+    box-shadow: inset 3px 3px 35px black;
+}
+.atacks button{
+    width: 15%;
+    height: 15%;
+    background-color: red;
+    border-radius: 50%;
+}
+button{
+    font-size: 1.5em;
+}

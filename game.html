@@ -45,6 +45,79 @@
             </h1>
         </canvas>
     </main>
+    <div id="buttonsplayer1">
+        <div class="keys">
+            <button 
+                onmouseleave="keysUp.w()"
+                onmouseenter="keysDown.w()" 
+                style="margin-left: 10.5%;">
+                W
+            </button><br>
+            <button
+                onmouseleave="keysUp.a()"
+                onmouseenter="keysDown.a()">
+                A
+            </button>
+            <button 
+                onmouseleave="keysUp.s()"
+                onmouseenter="keysDown.s()">
+                S
+            </button>
+            <button
+                onmouseleave="keysUp.d()"
+                onmouseenter="keysDown.d();">
+                D
+            </button>
+        </div>
+        <div class="atacks">
+            <button 
+                onclick="keysDown.v()">
+                V
+            </button>
+            <button 
+                onclick="keysDown.b()" 
+                style="margin-left: 18%;">
+                B
+            </button>
+        </div>
+    </div>
+    <div id="buttonsplayer2">
+        <div class="keys">
+            <button
+                onmouseleave="keysUp.ArrowUp()"
+                onmouseenter="keysDown.ArrowUp();"
+                style="margin-left: 18%;">
+                &uarr;
+            </button><br>
+            <button
+                onmouseleave="keysUp.ArrowLeft()"
+                onmouseenter="keysDown.ArrowLeft();">
+                &larr;
+            </button>
+            <button
+                onmouseleave="keysUp.ArrowDown()"
+                onmouseenter="keysDown.ArrowDown();">
+                &darr;
+            </button>
+            <button
+                onmouseleave="keysUp.ArrowRight()"
+                onmouseenter="keysDown.ArrowRight();">
+                &rarr;
+            </button>
+        </div>
+        <div class="atacks">
+            <button 
+                onclick="keysDown['1']()">
+                1
+            </button>
+            <button 
+                onclick="keysDown['3']()" 
+                style="margin-left: 10.5%;">
+                3
+            </button>
+        </div>
+
+    </div>
     <script>
         const canvas = window.document.getElementById("screen")
         const ctx = canvas.getContext("2d")
