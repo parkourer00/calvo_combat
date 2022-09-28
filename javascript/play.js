@@ -35,4 +35,4 @@ function play(){
 //play()
 
 
-canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}'`
+canvas.style.backgroundImage = `url('../medias/images/fundo/calvo10.jpg')`

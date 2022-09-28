@@ -3,6 +3,9 @@
     font-family: pointles;
     src: url('../medias/fonts/Pointless.ttf');
 }
+d{
+    src:url('../medias/images/fundo/calvo10.jpg');
+}
 *{
     margin: 0px;
     padding: 0px;
