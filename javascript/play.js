@@ -1,7 +1,7 @@
 const maps = [
     "https://parkourer00.github.io/calvo_combat/medias/images/fundo/fundo-barbearia.jpg",
     "https://parkourer00.github.io/calvo_combat/medias/images/fundo/KABELELEILALEILOA.png",
-    "https://parkourer00.github.io/calvo_combat/medias/images/fundo//calvo10.jpg",
+    "https://parkourer00.github.io/calvo_combat/medias/images/fundo/calvo10.jpg",
     "https://parkourer00.github.io/calvo_combat/medias/images/fundo/rinha_de_calvo.png"
 ]
 var calvosList = []
@@ -32,5 +32,7 @@ function play(){
     calvosList = [calvo01, calvo02]
     game()
 }
-play()
+//play()
 
+
+canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}'`
