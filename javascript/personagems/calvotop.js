@@ -38,7 +38,7 @@ class CalvoTop extends Calvo{
     addSprites(){
         this.sprites = {
             idle:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop//idle.png",
+                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/idle.png",
                 sprites:[
                     {
                         cut:{
