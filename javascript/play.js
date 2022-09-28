@@ -1,8 +1,8 @@
 const maps = [
-    "medias/images/fundo/fundo-barbearia.jpg",
-    "medias/images/fundo/KABELELEILALEILOA.png",
-    "medias/images/fundo/calvo10.jpg",
-    "medias/images/fundo/rinha_de_calvo.png"
+    "../medias/images/fundo/fundo-barbearia.jpg",
+    "../medias/images/fundo/KABELELEILALEILOA.png",
+    "../medias/images/fundo/calvo10.jpg",
+    "../medias/images/fundo/rinha_de_calvo.png"
 ]
 var calvosList = []
 function game(){
@@ -14,7 +14,7 @@ function game(){
     requestAnimationFrame(game)
 }
 function play(){
-    canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}'`
+    canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}')`
     var calvo01 = new CalvoTop({
         position:{
             x:0,
@@ -35,4 +35,4 @@ function play(){
 //play()
 
 
-canvas.style.backgroundImage = `url('../medias/images/fundo/calvo10.jpg')`
+canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}')`
