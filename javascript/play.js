@@ -1,8 +1,8 @@
 const maps = [
-    "../medias/images/fundo/fundo-barbearia.jpg",
-    "../medias/images/fundo/KABELELEILALEILOA.png",
-    "../medias/images/fundo/calvo10.jpg",
-    "../medias/images/fundo/rinha_de_calvo.png"
+    "https://parkourer00.github.io/calvo_combat/medias/images/fundo/fundo-barbearia.jpg",
+    "https://parkourer00.github.io/calvo_combat/medias/images/fundo/KABELELEILALEILOA.png",
+    "https://parkourer00.github.io/calvo_combat/medias/images/fundo/calvo10.jpg",
+    "https://parkourer00.github.io/calvo_combat/medias/images/fundo/rinha_de_calvo.png"
 ]
 var calvosList = []
 function game(){
