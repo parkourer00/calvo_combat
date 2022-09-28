@@ -35,6 +35,3 @@ function play(){
 setTimeout(() => {
     play()
 }, 250);
-
-
-canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}')`
