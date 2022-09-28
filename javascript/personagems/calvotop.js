@@ -38,7 +38,7 @@ class CalvoTop extends Calvo{
     addSprites(){
         this.sprites = {
             idle:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/idle.png",
+                imageSrc:"./medias/images/personagens/calvotop/idle.png",
                 sprites:[
                     {
                         cut:{
@@ -83,7 +83,7 @@ class CalvoTop extends Calvo{
                 ]
             },
             jump:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/jump.png",
+                imageSrc:"./medias/images/personagens/calvotop/jump.png",
                 calculate(player){
                     if(player.velocity.y < 0){
                         player.currentSprite = 0
@@ -116,7 +116,7 @@ class CalvoTop extends Calvo{
                 ]
             },
             run:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/run.png",
+                imageSrc:"./medias/images/personagens/calvotop/run.png",
                 sprites:[
                     {
                         cut:{
@@ -149,7 +149,7 @@ class CalvoTop extends Calvo{
                 }
             },
             atack2:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/atack2.png",
+                imageSrc:"./medias/images/personagens/calvotop/atack2.png",
                 sprites:[
                     {
                         cut:{
@@ -182,7 +182,7 @@ class CalvoTop extends Calvo{
                 }
             },
             atack1:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/atack1.png",
+                imageSrc:"./medias/images/personagens/calvotop/atack1.png",
                 sprites:[
                     {
                         cut:{
@@ -217,7 +217,7 @@ class CalvoTop extends Calvo{
                 ]
             },
             dead:{
-                imageSrc:"https://parkourer00.github.io/calvo_combat/medias/images/personagens/calvotop/deads.png",
+                imageSrc:"./medias/images/personagens/calvotop/deads.png",
                 sprites:[
                     {
                         cut:{
