@@ -32,7 +32,9 @@ function play(){
     calvosList = [calvo01, calvo02]
     game()
 }
-play()
+setTimeout(() => {
+    play()
+}, 2000);
 
 
 canvas.style.backgroundImage = `url('${maps[Math.floor(Math.random() * maps.length)]}')`
